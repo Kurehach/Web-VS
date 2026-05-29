@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kure Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- LOGIN POPUP -->
+
+<div id="loginPopup">
+
+    <div class="popup-box">
+
+        <h2>Login Website</h2>
+
+        <input type="text"
+        id="username"
+        placeholder="Username">
+
+        <input type="password"
+        id="password"
+        placeholder="Password">
+
+        <button onclick="login()">
+            Login
+        </button>
+
+    </div>
+
+</div>
+    </div>
+    <header>
+        <nav>
+            <h1 class="logo">KureStudio</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#service">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <h2>Membangun Website Modern</h2>
+                <p>
+                    Kami menyediakan jasa pembuatan website modern,
+                    responsif, dan profesional untuk bisnis digital.
+                </p>
+
+                <button class="login-btn"onclick="openLogin()">
+                        Masuk Sekarang
+                </button>   
+            </div>
+        </section>
+    </header>
+
+    <section class="about" id="about">
+        <h2>Tentang Kami</h2>
+
+        <p>
+            KureStudio adalah startup digital yang bergerak
+            di bidang pengembangan website dan desain UI/UX.
+        </p>
+    </section>
+
+    <section class="services" id="service">
+
+        <h2>Layanan Kami</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Website Sekolah</h3>
+                <p>
+                    Website modern untuk sekolah dan pendidikan.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Toko Online</h3>
+                <p>
+                    Sistem penjualan online dengan tampilan menarik.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Company Profile</h3>
+                <p>
+                    Website profil bisnis profesional dan elegan.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Kontak</h2>
+
+        <form>
+
+            <input type="text" placeholder="Nama">
+
+            <input type="email" placeholder="Email">
+
+            <textarea placeholder="Pesan"></textarea>
+
+            <button type="submit">
+                Kirim
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>© 2026 KureStudio | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
