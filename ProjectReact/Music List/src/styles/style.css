@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background: linear-gradient(135deg, #1e1e2f, #252540);
   min-height: 100vh;
 }
@@ -24,7 +24,6 @@ body {
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 25px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
 
 .form h3,
@@ -51,11 +50,6 @@ body {
   color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.form button:hover {
-  transform: translateY(-2px);
 }
 
 .cover-list {
@@ -72,7 +66,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
   border: 3px solid transparent;
-  transition: 0.25s;
+  transition: 0.2s;
 }
 
 .cover-list img:hover {
@@ -98,11 +92,6 @@ body {
   padding: 15px;
   text-align: center;
   color: white;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
 }
 
 .cover {
@@ -112,20 +101,12 @@ body {
   border-radius: 12px;
 }
 
-.card h3 {
-  margin-top: 12px;
-  margin-bottom: 8px;
-}
-
 .delete-btn {
+  margin-top: 10px;
   background: #ff4d6d;
   color: white;
   border: none;
   border-radius: 8px;
   padding: 8px 12px;
   cursor: pointer;
-}
-
-.delete-btn:hover {
-  opacity: 0.9;
 }

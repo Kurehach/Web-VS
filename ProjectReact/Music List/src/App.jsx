@@ -1,3 +1,6 @@
+import MusicForm from "./components/MusicForm";
+import MusicCard from "./components/MusicCard";
+import MusicList from "./components/MusicList";
 import { useState } from "react";
 import "./styles/style.css"
 
