@@ -53,79 +53,27 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <h1 className="title">🎵 Music List</h1>
+  <div className="container">
+    <h1 className="title">🎵 Music List</h1>
 
-      <div className="form">
-        <input
-          type="text"
-          placeholder="Judul Lagu"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+    <MusicForm
+      title={title}
+      setTitle={setTitle}
+      artist={artist}
+      setArtist={setArtist}
+      addSong={addSong}
+      cover={cover}
+      setCover={setCover}
+      coverOptions={coverOptions}
+      uploadCover={uploadCover}
+    />
 
-        <input
-          type="text"
-          placeholder="Artist"
-          value={artist}
-          onChange={(e) => setArtist(e.target.value)}
-        />
-
-        <h3>Select Cover</h3>
-
-        <div className="cover-list">
-          {coverOptions.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              alt={`cover-${index}`}
-              className={cover === img ? "selected" : ""}
-              onClick={() => setCover(img)}
-            />
-          ))}
-        </div>
-
-        <p>or Upload Your Own Cover</p>
-
-        <input
-          type="file"
-          accept="image/*"
-          onChange={uploadCover}
-        />
-
-        <button onClick={addSong}>
-          Tambah Lagu
-        </button>
-      </div>
-
-      <div className="song-list">
-        {songs.map((song) => (
-          <div className="card" key={song.id}>
-            {song.cover && (
-              <img
-                src={song.cover}
-                alt={song.title}
-                className="cover"
-              />
-            )}
-
-            <h3>{song.title}</h3>
-
-            <p>
-              <strong>Artist:</strong> {song.artist}
-            </p>
-
-            <button
-              className="delete-btn"
-              onClick={() => deleteSong(song.id)}
-            >
-              Delete
-            </button>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+    <MusicList
+      songs={songs}
+      deleteSong={deleteSong}
+    />
+  </div>
+);
 }
 
 export default App;
