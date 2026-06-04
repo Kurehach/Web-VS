@@ -507,3 +507,213 @@ td button{
     box-shadow:
     0 0 30px #00d9ff99;
 }
+
+/* DASHBOARD HEADER */
+
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+.dashboard-header h1{
+
+    color:#00d9ff;
+
+    font-size:42px;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+
+    text-decoration:none;
+
+    background:#00d9ff;
+
+    color:black;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.back-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 0 20px #00d9ff88;
+}
+
+/* TABLE CARD */
+
+.table-card{
+
+    background:#181818;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    margin-top:20px;
+
+    border:1px solid #333;
+
+    overflow-x:auto;
+}
+
+.table-card h2{
+
+    margin-bottom:20px;
+
+    color:#00d9ff;
+}
+
+/* TABLE */
+
+table{
+
+    width:100%;
+}
+
+th{
+
+    font-weight:700;
+}
+
+td{
+
+    vertical-align:top;
+}
+
+td:nth-child(4){
+
+    max-width:300px;
+
+    word-break:break-word;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00d9ff;
+
+    border-radius:20px;
+}
+
+/* FOOTER MODERN */
+
+footer{
+
+    background:#111;
+
+    margin-top:80px;
+}
+
+.footer-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:50px 0;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:40px;
+}
+
+.footer-brand h2{
+
+    color:#00d9ff;
+
+    margin-bottom:15px;
+}
+
+.footer-brand p{
+
+    color:#aaa;
+
+    line-height:1.8;
+}
+
+.footer-links,
+.footer-social{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+.footer-links h3,
+.footer-social h3{
+
+    color:#00d9ff;
+
+    margin-bottom:10px;
+}
+
+.footer-links a,
+.footer-social a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#bbb;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.footer-social a i{
+
+    width:20px;
+
+    color:#00d9ff;
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+
+    color:#00d9ff;
+
+    transform:translateX(5px);
+}
+
+.footer-bottom{
+
+    border-top:1px solid #333;
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#777;
+}

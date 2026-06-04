@@ -18,9 +18,9 @@ function login(){
 
         alert("Anda Login Sebagai Admin!");
 
-        document
-        .getElementById("loginPopup")
-        .style.display = "none";
+        window.location.href = "dashboard.html";
+        target="_blank"
+        rel="noopener noreferrer"
 
         window.location.href = "dashboard.html";
 
@@ -36,6 +36,11 @@ function login(){
 
         alert("Username atau Password salah!");
 
+            alert("Login Berhasil")
+            
+            document
+            .getElementById("loginPopup")
+            .style.display = "none";
     }
 
 }
