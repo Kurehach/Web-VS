@@ -17,19 +17,40 @@
 
     <div class="popup-box">
 
-        <h2>Login Website</h2>
+        <div class="login-logo">
+            💻
+        </div>
 
-        <input type="text"
+        <h2>KureStudio</h2>
+
+        <p class="login-subtitle">
+            Selamat datang di layanan pembuatan website profesional.
+            Silakan login untuk mengakses dashboard dan melakukan pemesanan layanan.
+        </p>
+
+        <input
+        type="text"
         id="username"
-        placeholder="Username">
+        placeholder="Masukkan Username">
 
-        <input type="password"
+        <input
+        type="password"
         id="password"
-        placeholder="Password">
+        placeholder="Masukkan Password">
+
+        <p class="login-subtitle">
+            Password Harus memiliki minimal 12 karakter
+        </p>
 
         <button onclick="login()">
-            Login
+            Login Sekarang
         </button>
+
+        <div class="login-info">
+
+            <h4>Gunakan Username dan Password Anda</h4>
+
+        </div>
 
     </div>
 
@@ -43,7 +64,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#service">Layanan</a></li>
-                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#contact">Pesan</a></li>
             </ul>
         </nav>
 
@@ -73,54 +94,94 @@
 
     <section class="services" id="service">
 
-        <h2>Layanan Kami</h2>
+    <h2>Layanan Kami</h2>
 
-        <div class="card-container">
+    <div class="card-container">
 
-            <div class="card">
-                <h3>Website Sekolah</h3>
-                <p>
-                    Website modern untuk sekolah dan pendidikan.
-                </p>
-            </div>
+        <div class="card">
 
-            <div class="card">
-                <h3>Toko Online</h3>
-                <p>
-                    Sistem penjualan online dengan tampilan menarik.
-                </p>
-            </div>
+            <h3>Website Sekolah</h3>
 
-            <div class="card">
-                <h3>Company Profile</h3>
-                <p>
-                    Website profil bisnis profesional dan elegan.
-                </p>
-            </div>
+            <img
+            src="assets/sekolah.jpg"
+            alt="Website Sekolah">
+
+            <p>
+                Website modern untuk sekolah dan pendidikan.
+            </p>
 
         </div>
 
-    </section>
+        <div class="card">
+
+            <h3>Toko Online</h3>
+
+            <img
+            src="assets/toko.jpg"
+            alt="Toko Online">
+
+            <p>
+                Sistem penjualan online dengan tampilan menarik.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Company Profile</h3>
+
+            <img
+            src="assets/company.jpg"
+            alt="Company Profile">
+
+            <p>
+                Website profil bisnis profesional dan elegan.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
     <section class="contact" id="contact">
 
-        <h2>Kontak</h2>
+    <h2>Pesan Jasa Website</h2>
 
-        <form>
+    <form onsubmit="kirimPesanan(event)">
 
-            <input type="text" placeholder="Nama">
+        <input
+        type="text"
+        id="namaPesanan"
+        placeholder="Nama Lengkap"
+        required>
 
-            <input type="email" placeholder="Email">
+        <input
+        type="email"
+        id="emailPesanan"
+        placeholder="Email"
+        required>
 
-            <textarea placeholder="Pesan"></textarea>
+        <select id="jenisPesanan">
 
-            <button type="submit">
-                Kirim
-            </button>
+            <option>Company Profile</option>
+            <option>Toko Online</option>
+            <option>Website Sekolah</option>
 
-        </form>
+        </select>
 
-    </section>
+        <textarea
+        id="deskripsiPesanan"
+        placeholder="Jelaskan kebutuhan website Anda"
+        required></textarea>
+
+        <button type="submit">
+            Kirim Pesanan
+        </button>
+
+    </form>
+
+</section>
 
     <footer>
         <p>© 2026 KureStudio | All Rights Reserved</p>
